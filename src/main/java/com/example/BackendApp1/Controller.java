@@ -15,6 +15,12 @@ public class Controller {
     {
         return "Hello Coder!! First API";
     }
+	
+	@GetMapping("/hi2")
+    public String sayHello2()
+    {
+        return "Hello Coder!! First API.. Update";
+    }
 
     @GetMapping("/convert")
     public int convertToInr(@RequestParam int q)
